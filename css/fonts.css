@@ -2,3 +2,8 @@
     font-family: 'sourceSerifPro-Regular';
     src: url('../fonts/Source_Serif_Pro/SourceSerifPro-Regular.ttf') format("truetype");
 }
+
+@font-face {
+    font-family: 'fascinate-Regular';
+    src: url('../fonts/Fascinate/Fascinate-Regular.ttf') format("truetype");
+}

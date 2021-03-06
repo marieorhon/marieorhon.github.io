@@ -3,13 +3,34 @@
     --bg-main: black;
     --orange: #FF914D;
     --bleu: #159696;
+    --bleu-bis: #2b6060;
+}
+
+* {
+    font-family: "sourceSerifPro-Regular";
+    color: #FFF;
 }
 
 HTML, body {
     background-color: var(--bg-main) !important;
 }
 
-.paragraphe {
-    font-family: "sourceSerifPro-Regular", serif;
-    color: #FFF;
+H1, H2, H3, H4, H5, H6 {
+    font-family: "fascinate-Regular";
+    font-size: 7em;
+    color: var(--orange);
+}
+
+.paragraphe {}
+
+.btn.btn-main {
+    font-family: "sourceSerifPro-Regular";
+    color: #fff;
+    background-color: var(--bleu);
+    border-color: var(--bleu);
+}
+.btn.btn-main:hover {
+    color: #fff;
+    background-color: var(--bleu-bis);
+    border-color: var(--bleu-bis);
 }
