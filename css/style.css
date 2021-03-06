@@ -1,0 +1,15 @@
+/* VARS */
+:root {
+    --bg-main: black;
+    --orange: #FF914D;
+    --bleu: #159696;
+}
+
+HTML, body {
+    background-color: var(--bg-main) !important;
+}
+
+.paragraphe {
+    font-family: "sourceSerifPro-Regular", serif;
+    color: #FFF;
+}
