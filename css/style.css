@@ -21,6 +21,21 @@ H1, H2, H3, H4, H5, H6 {
     color: var(--orange);
 }
 
+A {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*********************************/
+/* NAV */
+/*********************************/
+NAV {
+    
+}
+
+/*********************************/
+/* MAIN */
+/*********************************/
 .paragraphe {}
 
 .btn.btn-main {
@@ -29,6 +44,7 @@ H1, H2, H3, H4, H5, H6 {
     background-color: var(--bleu);
     border-color: var(--bleu);
 }
+
 .btn.btn-main:hover {
     color: #fff;
     background-color: var(--bleu-bis);
