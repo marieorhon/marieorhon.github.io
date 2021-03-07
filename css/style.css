@@ -11,8 +11,12 @@
     color: #FFF;
 }
 
-HTML, body {
+HTML, BODY {
     background-color: var(--bg-main) !important;
+}
+
+BODY {
+    height: 100vh;
 }
 
 H1, H2, H3, H4, H5, H6 {
@@ -26,11 +30,48 @@ A {
     text-decoration: none;
 }
 
+.center {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
 /*********************************/
 /* NAV */
 /*********************************/
-NAV {
-    
+NAV {}
+
+NAV UL {
+    list-style: none;
+}
+
+NAV LI {
+    margin-bottom: 20px;
+}
+
+NAV LI::before {
+    font-family: "bootstrap-icons" !important;
+    /*icons bi-circle*/
+    content: "\f28a";
+    display: inline-block;
+    margin-left: -1.2em;
+    width: 1.3em;
+    vertical-align: bottom;
+}
+
+NAV LI:hover::before {
+    /*bi-circle-fill*/
+    content: "\f287";
+}
+
+/* last LI */
+NAV LI:last-child::before {
+    /*icons bi-square*/
+    content: "\f584";
+}
+
+NAV LI:last-child:hover::before {
+    /*bi-square-fill*/
+    content: "\f582";
 }
 
 /*********************************/
@@ -43,10 +84,16 @@ NAV {
     color: #fff;
     background-color: var(--bleu);
     border-color: var(--bleu);
+    width: 50%;
 }
 
 .btn.btn-main:hover {
     color: #fff;
     background-color: var(--bleu-bis);
     border-color: var(--bleu-bis);
+}
+
+.btn-start {
+    text-align: center;
+    margin-top: 20px;
 }
