@@ -31,9 +31,8 @@ A:hover{
     text-decoration: none;
 }
 
-.center {
-    margin-top: 50vh;
-    transform: translateY(-50%);
+.full-height {
+    height: 100vh;
 }
 
 /*********************************/
@@ -99,6 +98,9 @@ NAV LI SPAN A:focus {
 /*********************************/
 /* MAIN */
 /*********************************/
+.img-home {
+    width: 220px;
+}
 .paragraphe {}
 
 .btn.btn-main {
