@@ -115,6 +115,15 @@ NAV LI A:focus SPAN {
 }
 
 /*********************************/
+/* SUB-PAGE */
+/*********************************/
+.sub-page .content{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+/*********************************/
 /* MEDIA */
 /*********************************/
 /* 576px => xs */
@@ -141,11 +150,11 @@ NAV LI A:focus SPAN {
         margin-left: unset;
         width: 1.3em;
     }
-    NAV LI A SPAN{
+
+    NAV LI A SPAN {
         display: none;
     }
 }
-
 
 /* 768px => md */
 @media (max-width: 768px) {
