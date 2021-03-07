@@ -29,7 +29,7 @@ A:hover {
 }
 
 .full-height {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*********************************/
@@ -69,7 +69,7 @@ NAV LI A {
     display: inline-block;
 }
 
-NAV LI A SPAN  {
+NAV LI A SPAN {
     width: 0px;
     overflow: hidden;
     display: inline-block;
@@ -78,10 +78,11 @@ NAV LI A SPAN  {
     white-space: nowrap;
 }
 
-NAV LI A I:hover + SPAN,
+NAV LI A I:hover+SPAN,
 NAV LI A SPAN:hover,
 NAV LI A:focus SPAN {
-    width: calc(100% - 2px); /* 2px => width of I in A */
+    width: calc(100% - 2px);
+    /* 2px => width of I in A */
 }
 
 /*********************************/
@@ -111,4 +112,44 @@ NAV LI A:focus SPAN {
 .btn-start {
     text-align: center;
     margin-top: 20px;
+}
+
+/*********************************/
+/* MEDIA */
+/*********************************/
+/* 576px => xs */
+@media (max-width: 576px) {
+    .main-row {
+        flex-flow: column-reverse;
+    }
+
+    /* NAV*/
+    NAV UL {
+        text-align: center;
+        padding: unset;
+        margin-top: 1rem;
+    }
+
+    NAV UL LI {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    NAV LI A I[class*=" bi-"]::before {
+        vertical-align: sub;
+        display: inline-block;
+        margin-left: unset;
+        width: 1.3em;
+    }
+    NAV LI A SPAN{
+        display: none;
+    }
+}
+
+
+/* 768px => md */
+@media (max-width: 768px) {
+    H1, H2, H3, H4, H5, H6 {
+        font-size: 18vw;
+    }
 }
