@@ -45,40 +45,31 @@ NAV LI {
     margin-bottom: 20px;
 }
 
-NAV LI::before {
-    font-family: "bootstrap-icons" !important;
-    /*icons bi-circle*/
-    content: "\f28a";
+NAV LI A I[class*=" bi-"]::before {
+    vertical-align: sub;
     display: inline-block;
     margin-left: -1.2em;
     width: 1.3em;
-    vertical-align: bottom;
 }
 
-NAV LI:hover::before,
-NAV LI.active::before {
+NAV LI A I[class*=" bi-"]:hover::before,
+NAV LI.active A I[class*=" bi-"]::before {
     /*bi-circle-fill*/
     content: "\f287";
 }
 
-/* last LI */
-NAV LI:last-child::before {
-    /*icons bi-square*/
-    content: "\f584";
-}
-
-NAV LI:last-child:hover::before,
-NAV LI.active:last-child::before {
+NAV LI:last-child A I[class*=" bi-"]:hover::before,
+NAV LI.active:last-child A I[class*=" bi-"]::before {
     /*bi-square-fill*/
     content: "\f582";
 }
 
 /* anim nav */
-NAV LI SPAN {
+NAV LI A {
     display: inline-block;
 }
 
-NAV LI SPAN A {
+NAV LI A SPAN  {
     width: 0px;
     overflow: hidden;
     display: inline-block;
@@ -87,9 +78,10 @@ NAV LI SPAN A {
     white-space: nowrap;
 }
 
-NAV LI:hover SPAN A,
-NAV LI SPAN A:focus {
-    width: 100%;
+NAV LI A I:hover + SPAN,
+NAV LI A SPAN:hover,
+NAV LI A:focus SPAN {
+    width: calc(100% - 2px); /* 2px => width of I in A */
 }
 
 /*********************************/
