@@ -5,6 +5,7 @@ $(function() {
         slidesToScroll: 1,
         autoplay: false,
         arrows: false,
+        centerMode: true,
         responsive: [{
             breakpoint: 1000,
             settings: {
