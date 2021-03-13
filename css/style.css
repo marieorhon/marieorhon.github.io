@@ -35,6 +35,10 @@ A:hover {
 /*********************************/
 /* NAV */
 /*********************************/
+.nav-coll {
+    z-index: 100;
+}
+
 NAV {}
 
 NAV UL {
@@ -99,7 +103,7 @@ NAV LI A:focus SPAN {
     color: #fff;
     background-color: var(--bleu);
     border-color: var(--bleu);
-    width: 50%;
+    width: 25%;
     margin-bottom: 10px;
 }
 
@@ -114,13 +118,30 @@ NAV LI A:focus SPAN {
     margin-top: 20px;
 }
 
+.btn-start .btn.btn-main {
+    width: 50%;
+}
+
 /*********************************/
 /* SUB-PAGE */
 /*********************************/
-.sub-page .content{
+HEADER {
+    text-align: center;
+}
+
+.sub-page H1 {
+    font-size: 5em
+}
+
+.sub-page .content {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+}
+
+FOOTER {
+    text-align: center;
+    margin: 5px 0;
 }
 
 /*********************************/
@@ -161,5 +182,11 @@ NAV LI A:focus SPAN {
 @media (max-width: 768px) {
     H1, H2, H3, H4, H5, H6 {
         font-size: 18vw;
+    }
+}
+
+@media (max-width: 1064px) {
+    .sub-page H1 {
+        font-size: 9vw
     }
 }
