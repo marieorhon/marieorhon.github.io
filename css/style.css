@@ -145,6 +145,56 @@ FOOTER {
 }
 
 /*********************************/
+/* CARD */
+/*********************************/
+.card {
+    margin: 0 10px;
+    background-color: var(--bleu-bis);
+}
+
+.card * {
+    color: black;
+}
+
+.card .card-body img {
+    margin-bottom: 10px;
+}
+
+.card .card-body .card-img-overlay {
+    transition: all 1s ease-in;
+    height: 0px;
+    overflow: hidden;
+    top: unset;
+}
+
+.card .card-body .card-img-overlay I {
+    transition: all 1s ease-in;
+    float: right;
+    margin-top: -10px;
+}
+
+.card .card-body .card-img-overlay .txt>* {
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+
+.card .card-body:hover .card-img-overlay,
+.card .card-body.active .card-img-overlay {
+    height: calc(100% - 50px);
+    background-color: #ffffff73;
+}
+
+.card .card-body:hover .card-img-overlay I,
+.card .card-body.active .card-img-overlay I {
+    transform: rotate(180deg);
+}
+
+.card .card-body:hover .card-img-overlay .txt>*,
+.card .card-body.active .card-img-overlay .txt>* {
+    opacity: 1;
+}
+
+/*********************************/
 /* MEDIA */
 /*********************************/
 /* 576px => xs */
