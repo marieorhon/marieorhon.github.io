@@ -156,8 +156,23 @@ FOOTER {
     color: black;
 }
 
+.card .card-header {
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.card .card-body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
 .card .card-body img {
     margin-bottom: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
 }
 
 .card .card-body .card-img-overlay {
@@ -181,7 +196,7 @@ FOOTER {
 .card .card-body:hover .card-img-overlay,
 .card .card-body.active .card-img-overlay {
     height: calc(100% - 50px);
-    background-color: #ffffff73;
+    background-color: #ffffffa6;
 }
 
 .card .card-body:hover .card-img-overlay I,
