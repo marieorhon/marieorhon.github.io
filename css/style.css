@@ -130,6 +130,7 @@ NAV LI A:focus SPAN {
 @media (max-width: 576px) {
     .main-row {
         flex-flow: column-reverse;
+        justify-content: center;
     }
 
     /* NAV*/
