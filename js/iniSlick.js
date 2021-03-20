@@ -7,12 +7,26 @@ $(function() {
         arrows: false,
         centerMode: true,
         responsive: [{
-            breakpoint: 1000,
+            breakpoint: 1120,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                initialSlide: 1
+            }
+        },{
+            breakpoint: 865,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 1
+            }
+        },{
+            breakpoint: 622,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-        }, ]
+        }]
     });
 
     $(".card .card-body .card-img-overlay").click(function() {
