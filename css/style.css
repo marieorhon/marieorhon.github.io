@@ -103,8 +103,17 @@ NAV LI A:focus SPAN {
     color: #fff;
     background-color: var(--bleu);
     border-color: var(--bleu);
-    width: 25%;
+    width: 27%;
     margin-bottom: 10px;
+}
+
+.btn.btn-main SPAN {
+    display: inline-block;
+    width: 84%;
+}
+
+.btn.btn-main I::before {
+    vertical-align: middle;
 }
 
 .btn.btn-main:hover {
@@ -116,6 +125,10 @@ NAV LI A:focus SPAN {
 .btn-start {
     text-align: center;
     margin-top: 20px;
+}
+
+.btn-start I {
+    float: right;
 }
 
 .btn-start .btn.btn-main {
@@ -142,6 +155,14 @@ HEADER {
 FOOTER {
     text-align: center;
     margin: 5px 0;
+}
+
+FOOTER .btn.btn-main:first-child I {
+    float: left;
+}
+
+FOOTER .btn.btn-main:last-child I {
+    float: right;
 }
 
 /*********************************/
