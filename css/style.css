@@ -242,10 +242,21 @@ FOOTER {
     }
 }
 
+/* 992px => lg */
+@media (max-width: 992px) {
+    .btn.btn-main {
+        width: 35%;
+    }
+}
+
 /* 768px => md */
 @media (max-width: 768px) {
     H1, H2, H3, H4, H5, H6 {
         font-size: 18vw;
+    }
+
+    .btn.btn-main {
+        width: 50%;
     }
 }
 
