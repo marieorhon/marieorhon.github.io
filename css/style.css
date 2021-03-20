@@ -171,16 +171,27 @@ FOOTER .btn.btn-main:last-child I {
 .card {
     margin: 0 10px;
     background-color: var(--bleu-bis);
+    margin-bottom: 10px;
 }
 
 .card * {
     color: black;
 }
 
+.card.formation * {
+    color: var(--orange);
+    text-align: center;
+}
+
 .card .card-header {
     text-transform: uppercase;
     color: var(--orange);
     font-weight: bold;
+}
+
+.card img {
+    max-height: 35vh;
+    object-fit: contain;
 }
 
 .card .card-body {
