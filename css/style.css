@@ -78,8 +78,9 @@ NAV LI A SPAN {
     overflow: hidden;
     display: inline-block;
     vertical-align: bottom;
-    transition: width 1s;
+    transition: width 1s, padding 1s;
     white-space: nowrap;
+    background-color: var(--bg-main);
 }
 
 NAV LI A I:hover+SPAN,
@@ -87,6 +88,7 @@ NAV LI A SPAN:hover,
 NAV LI A:focus SPAN {
     width: calc(100% - 2px);
     /* 2px => width of I in A */
+    padding: 0 5px;
 }
 
 /*********************************/
