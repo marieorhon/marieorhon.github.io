@@ -247,6 +247,10 @@ FOOTER .btn.btn-main:last-child I {
 /*********************************/
 /* contact */
 /*********************************/
+.contact-page IMG.img-bravo {
+    width: 100%;
+}
+
 .info-contact {
     display: flex;
     justify-content: space-around;
@@ -269,8 +273,8 @@ FOOTER .btn.btn-main:last-child I {
 /*********************************/
 /* MEDIA */
 /*********************************/
-/* 576px => xs */
-@media (max-width: 576px) {
+/* 575px => xs-1 */
+@media (max-width: 575px) {
     .main-row {
         flex-flow: column-reverse;
         justify-content: center;
@@ -304,15 +308,19 @@ FOOTER .btn.btn-main:last-child I {
     }
 }
 
-/* 992px => lg */
-@media (max-width: 992px) {
+/* 991px => lg-1 */
+@media (max-width: 991px) {
     .btn.btn-main {
         width: 35%;
     }
+
+    .contact-page IMG.img-bravo {
+        width: 300px;
+    }
 }
 
-/* 768px => md */
-@media (max-width: 768px) {
+/* 767px => md-1 */
+@media (max-width: 767px) {
     H1, H2, H3, H4, H5, H6 {
         font-size: 18vw;
     }
