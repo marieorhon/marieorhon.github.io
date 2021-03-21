@@ -1,0 +1,39 @@
+
+circle {
+    /*stroke-dasharray: 350;
+    stroke-dashoffset: 350;*/
+    stroke-linecap: round;
+    stroke-width: 4px;
+    stroke: var(--orange);
+    fill: none;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    animation-name: drawCircle;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.circle {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+}
+
+.circle svg {
+    width: 100%;
+}
+
+@keyframes drawCircle {
+    0% {
+        stroke-dashoffset: 330;
+    }
+
+    30% {
+        stroke-dashoffset: 200;
+    }
+
+    100% {
+        stroke-dashoffset: 200;
+    }
+}
