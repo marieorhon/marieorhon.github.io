@@ -1,4 +1,6 @@
-
+/*********************************/
+/* circle */
+/*********************************/
 circle {
     /*stroke-dasharray: 350;
     stroke-dashoffset: 350;*/
@@ -35,5 +37,40 @@ circle {
 
     100% {
         stroke-dashoffset: 200;
+    }
+}
+
+/*********************************/
+/* bar */
+/*********************************/
+.progress {
+    background-color: #ffffff2e;
+}
+
+.progress-bar {
+    background-color: var(--bleu-bis);
+    animation: progress 4s ease;
+}
+
+TABLE {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+TABLE TR TD:first-child {
+    padding-right: 20px;
+}
+
+TABLE TR TD:last-child {
+    width: 70vw;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
     }
 }
