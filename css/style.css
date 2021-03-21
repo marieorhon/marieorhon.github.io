@@ -22,6 +22,10 @@ H1, H2, H3, H4, H5, H6 {
     color: var(--orange);
 }
 
+H2, H3, H4, H5, H6 {
+    font-size: 5em
+}
+
 A,
 A:hover {
     color: inherit;
@@ -142,10 +146,6 @@ NAV LI A:focus SPAN {
 /*********************************/
 HEADER {
     text-align: center;
-}
-
-.sub-page H1 {
-    font-size: 5em
 }
 
 .sub-page .content {
@@ -274,6 +274,10 @@ FOOTER .btn.btn-main:last-child I {
     NAV LI A SPAN {
         display: none;
     }
+
+    .full-height .full-height {
+        min-height: auto;
+    }
 }
 
 /* 992px => lg */
@@ -295,7 +299,7 @@ FOOTER .btn.btn-main:last-child I {
 }
 
 @media (max-width: 1064px) {
-    .sub-page H1 {
+    .sub-page H2 {
         font-size: 9vw
     }
 }
