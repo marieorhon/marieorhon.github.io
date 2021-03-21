@@ -102,7 +102,9 @@ NAV LI A:focus SPAN {
     width: 220px;
 }
 
-.paragraphe {}
+.paragraphe {
+    width: 85%;
+}
 
 .btn.btn-main {
     font-family: "sourceSerifPro-Regular";
@@ -240,6 +242,28 @@ FOOTER .btn.btn-main:last-child I {
 .card .card-body:hover .card-img-overlay .txt>*,
 .card .card-body.active .card-img-overlay .txt>* {
     opacity: 1;
+}
+
+/*********************************/
+/* contact */
+/*********************************/
+.info-contact {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.info-contact A {
+    display: inline-block;
+}
+
+.info-contact A.mail {
+    text-decoration: underline;
+}
+
+.info-contact IMG {
+    width: 50px;
 }
 
 /*********************************/
