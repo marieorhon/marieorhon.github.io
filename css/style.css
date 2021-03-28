@@ -281,7 +281,11 @@ FOOTER .btn.btn-main:last-child I {
     padding-left: 20px;
     color: var(--bleu);
     text-align: left;
-    width: 60%;
+    /*width: 60%;*/
+}
+
+.loisirs DIV.txt .sub-txt {
+    font-size: 16px;
 }
 
 /*********************************/
