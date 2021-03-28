@@ -17,7 +17,7 @@ HTML, BODY {
 }
 
 H1, H2, H3, H4, H5, H6 {
-    font-family: "fascinate-Regular";
+    font-family: "lobster";
     font-size: 7em;
     color: var(--orange);
 }
