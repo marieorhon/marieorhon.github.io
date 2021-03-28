@@ -249,7 +249,7 @@ FOOTER .btn.btn-main:last-child I {
 /*********************************/
 .profil {
     max-width: 542px;
-    height: 400px;
+    height: 300px;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
