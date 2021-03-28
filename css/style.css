@@ -1,5 +1,6 @@
 /* VARS */
 :root {
+    /*#000000a8*/
     --bg-main: black;
     --orange: #FF914D;
     --bleu: #159696;
@@ -242,6 +243,43 @@ FOOTER .btn.btn-main:last-child I {
 .card .card-body:hover .card-img-overlay .txt>*,
 .card .card-body.active .card-img-overlay .txt>* {
     opacity: 1;
+}
+
+/*********************************/
+/* Profil / Loisirs */
+/*********************************/
+.profil {
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profil>DIV {
+    width: 50%;
+}
+
+.profil>DIV:nth-child(2n) {
+    text-align: right;
+}
+
+.loisirs {
+    text-align: center;
+}
+
+.loisirs IMG {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.loisirs DIV.txt {
+    display: inline-block;
+    padding-left: 20px;
 }
 
 /*********************************/
