@@ -274,11 +274,12 @@ FOOTER .btn.btn-main:last-child I {
 .loisirs IMG {
     max-width: 100px;
     margin-bottom: 20px;
+    float: right;
 }
 
 .loisirs DIV.txt {
     display: inline-block;
-    padding-left: 20px;
+    float: left;
     color: var(--bleu);
     text-align: left;
     /*width: 60%;*/
@@ -361,6 +362,11 @@ IFRAME {
 
     IFRAME {
         height: 89vh;
+    }
+
+    .loisirs IMG,
+    .loisirs DIV.txt {
+        float: none;
     }
 }
 
