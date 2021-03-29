@@ -360,6 +360,10 @@ IFRAME {
         min-height: auto;
     }
 
+    .paragraphe {
+        width: auto;
+    }
+
     IFRAME {
         height: 89vh;
     }
