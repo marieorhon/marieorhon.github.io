@@ -257,6 +257,7 @@ FOOTER .btn.btn-main:last-child I {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 20px;
 }
 
 .profil>DIV {
